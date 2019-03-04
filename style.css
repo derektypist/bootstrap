@@ -1,0 +1,22 @@
+/* Import Font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Body */
+
+body {
+
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+}
+
+li .active {
+    background-color: lightgreen;
+}
+
+
+/* Liked Comments */
+
+.liked {
+    background-color: lightblue;
+}
+

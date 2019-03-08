@@ -41,5 +41,14 @@ body {
 
 /* Margin Styles */
 .mgn-col {
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+/* Navbar Styles */
+.navbar-header {
+    background-color: lightgreen;
+}
+
+.navbar-nav {
+    background-color: lightyellow;
 }

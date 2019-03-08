@@ -7,16 +7,39 @@
 body {
 
     font-family: "Roboto", Arial, Verdana, sans-serif;
+    height: 100%;
 }
 
 /* Liked Comments */
 
 .liked {
     background-color: lightblue;
+    padding: 10px;
 }
 
 /* Jumbotron */
 
 .jumbotron {
     background-color: pink;
+}
+
+/* List Items */
+
+.list-items {
+    color: green;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: orange;
+}
+
+.list-items a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+/* Margin Styles */
+.mgn-col {
+    margin-left: 5px;
 }

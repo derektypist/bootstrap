@@ -9,14 +9,14 @@ body {
     font-family: "Roboto", Arial, Verdana, sans-serif;
 }
 
-li .active {
-    background-color: lightgreen;
-}
-
-
 /* Liked Comments */
 
 .liked {
     background-color: lightblue;
 }
 
+/* Jumbotron */
+
+.jumbotron {
+    background-color: pink;
+}

@@ -13,10 +13,17 @@
 <!-- Load Scripts --> 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("this").css("color", "orange");
+    
+        });
+    });
+</script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Logo -->
             <div class="navbar-header">
@@ -35,5 +42,33 @@
             </ul>
         </div>
     </nav>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <ul>
+                <li>Maths</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+            </ul>
+            <button>Set Colour of List Items</button>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <ul>
+                <li>Adobe Acrobat</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+            </ul>
+            <button>Set Colour of List Items</button>
+            </div>
+            
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
 </body>
 </html>

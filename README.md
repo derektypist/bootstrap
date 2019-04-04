@@ -15,6 +15,7 @@ The aim is to provide you (the user) about my experiences of Bootstrap.  This in
     Balls
     jQueryDemo
     Celebrities
+    Social Links
     
 ## Styling
 
@@ -63,7 +64,9 @@ Details of Celebrities in the UK, USA and Italy.
 
 Some links available (e.g. Anna Richardson).
 
+## Social Links
 
+Facebook, LinkedIn, YouTube and Pinterest.
   
   
   

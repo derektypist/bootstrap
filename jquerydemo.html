@@ -16,7 +16,13 @@
 <script>
     $(document).ready(function(){
         $("button").click(function(){
-            $("ul li:first").hide()
+            $(".myhighlight").css("color", "orange");
+        });
+        $("p").mouseenter(function(){
+            $(this).css("color", "green")
+        });
+        $("p").mouseleave(function(){
+            $(this).css("color", "purple")
         });
     });
 </script>
@@ -42,25 +48,25 @@
         </div>
     </nav>
     
+    <!-- Section -->
     <section class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-4">
                 <ul>
-                <li>Maths</li>
+                <li class="myhighlight">Maths</li>
                 <li>Physics</li>
                 <li>Chemistry</li>
             </ul>
-            <button>Set Colour of List Items</button>
+            <button>Change Colour</button>
             </div>
             <div class="col-xs-12 col-sm-4">
-                <ul>
-                <li>Adobe Acrobat</li>
-                <li>Microsoft Word</li>
-                <li>Microsoft Excel</li>
-            </ul>
-            <button>Set Colour of List Items</button>
+                <p>This is a paragraph</p>
+                <p>This is the second column</p>
             </div>
-            
+            <div class="col-xs-12 col-sm-4">
+                <p>This is another paragraph</p>
+                <p>This is the third column</p>
+            </div>
             
         </div>
         

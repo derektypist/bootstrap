@@ -1,3 +1,5 @@
+# Derek Dhammaloka's Bootstrap Experience (Version 3.3.7)
+
 Welcome to My Bootstrap Experience.
 
 ## UX
@@ -16,6 +18,8 @@ The aim is to provide you (the user) about my experiences of Bootstrap.  This in
     jQueryDemo
     Celebrities
     Social Links
+    Technologies
+    Deployment
     
 ## Styling
 
@@ -68,6 +72,20 @@ Some links available (e.g. Anna Richardson).
 
 Facebook, LinkedIn, YouTube and Pinterest.
   
-  
-  
-  
+## Technologies
+
+* HTML5
+* CSS3
+* Bootstrap 3.3.7
+
+## Deployment
+
+Deployed on GitHub Pages - https://derektypist.github.io/bootstrap
+
+When adding to AWS Cloud9, use the commands
+
+    git remote add origin https://github.com/derektypist/bootstrap
+    git pull origin master
+    git push --set-upstream origin master
+    
+Any changes, use the command git push in the terminal window

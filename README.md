@@ -76,6 +76,7 @@ Facebook, LinkedIn, YouTube and Pinterest.
 
 * HTML5
 * CSS3
+* jQuery 3.2.1
 * Bootstrap 3.3.7
 
 ## Deployment

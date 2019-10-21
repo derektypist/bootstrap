@@ -1,6 +1,6 @@
 # Derek Dhammaloka's Bootstrap Experience (Version 3.3.7)
 
-Welcome to My Bootstrap Experience.
+Welcome to My Bootstrap Experience.  The purpose of this project is to investigate my experiences of Bootstrap (e.g. Jumbotron).
 
 ## UX
 

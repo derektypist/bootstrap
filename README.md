@@ -7,6 +7,8 @@ Welcome to My Bootstrap Experience.  The purpose of this project is to investiga
 The aim is to provide you (the user) about my experiences of Bootstrap.  This includes styling
 (e.g. the jumbotron has a background colour of pink).
 
+Information Architecture - Computing, Karaoke, Holidays, Balls, jQueryDemo and Celebrities.  Organising Principle is Interests.
+
 ## Contents
 
     Styling
@@ -33,7 +35,7 @@ The Index Page gives full details of the pages.  A liked comment is included.
 ## Computing
 
 Details of office skills (e.g. Adobe Acrobat, Microsoft Excel) and Programming
-Languages (e.g. Python).  Links to professional organisations are included.
+Languages (e.g. Python).  Links to professional organisations (including Meetups) are included.
 
 ## Karaoke
 

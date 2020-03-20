@@ -102,12 +102,40 @@
         $("#subjects").click(function(){
             $(".myhighlight").css("color", "orange");
         });
-        $("p").mouseenter(function(){
-            $(this).css("color", "green")
+        $("#para-one").mouseenter(function(){
+            $("#para-one").css("color", "green");
         });
-        $("p").mouseleave(function(){
-            $(this).css("color", "purple")
+        
+        $("#para-one").mouseleave(function(){
+            $("#para-one").css("color", "purple");
         });
+        
+        $("#para-two").mouseenter(function(){
+            $("#para-two").css("color", "blue");
+        });
+        
+         $("#para-two").mouseleave(function(){
+            $("#para-two").css("color", "brown");
+        });
+        
+        $("#para-three").mouseenter(function(){
+            $("#para-three").css("color", "teal");
+        });
+        
+        $("#para-three").mouseleave(function(){
+            $("#para-three").css("color", "deepskyblue");
+        });
+        
+        $("#para-four").mouseenter(function(){
+            $("#para-four").css("color", "lime");
+        });
+        
+        $("#para-four").mouseleave(function(){
+            $("#para-four").css("color", "seagreen");
+        });
+        
+        
+        
     });
 </script>
 </head>
@@ -144,12 +172,12 @@
             <input type="button" id="subjects" value="Change Colour"/>
             </article>
             <article class="col-sm-4">
-                <p>This is a paragraph</p>
-                <p>This is the second column</p>
+                <p id="para-one">This is a paragraph</p>
+                <p id="para-two">This is the second column</p>
             </article>
             <article class="col-sm-4">
-                <p>This is another paragraph</p>
-                <p>This is the third column</p>
+                <p id="para-three">This is another paragraph</p>
+                <p id="para-four">This is the third column</p>
             </article>
             
         </article>

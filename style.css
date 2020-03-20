@@ -114,14 +114,6 @@ footer {
     margin: 20px;
 }
 
-/* jQueryDemo - Subjects */
-.row button #subjects
-{
-    background-color: black;
-}
-
-
-
 /* jQueryDemo - Keypad */
 
 #keypad {
@@ -133,6 +125,7 @@ footer {
     height: 75px;
     font-size: 2.5em;
     background-color: lightblue;
+    color: black;
     text-align: center;
 }
 

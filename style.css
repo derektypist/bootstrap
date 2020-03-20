@@ -144,3 +144,22 @@ button {
     width: 33.333%;
 }
 
+button:hover {
+    background-color: navy;
+}
+
+#clear {
+    color: deepskyblue;
+}
+
+#clear:hover {
+    background-color: green;
+}
+
+#settings {
+    color: orange;
+}
+
+#settings:hover {
+    background-color: purple;
+}

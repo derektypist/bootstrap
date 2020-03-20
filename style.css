@@ -115,6 +115,12 @@ footer {
 }
 
 /* jQueryDemo - Keypad */
+
+#keypad {
+    width: 50%;
+    margin: auto;
+}
+
 #display {
     height: 75px;
     font-size: 2.5em;

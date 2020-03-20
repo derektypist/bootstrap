@@ -61,8 +61,58 @@ Further links available (e.g. Marriott Hotels).
 
 In the first column, clicking on the button changes the colour of the word ('Maths') to orange.
 
-In the second and third columns, entering the mouse on a paragraph changes the colour to green.
-Leaving the mouse on a paragraph changes the colour to purple.
+In the second column, mouse entering on the first paragraph changes the colour of the word to green.
+In the second column, mouse leaving on the first paragraph changes the colour of the word to purple.
+
+In the second column, mouse entering on the second paragraph changes the colour of the word to blue.
+In the second column, mouse leaving on the second paragraph changes the colour of the word to brown.
+
+In the third column, mouse entering on the first paragraph changes the colour of the word to teal.
+In the third column, mouse leaving on the second paragraph changes the colour of the word to deepskyblue.
+
+In the fourth column, mouse entering on the first paragraph changes the colour of the word to lime.
+In the fourth column, mouse leaving on the second paragraph changes the colour of the word to seagreen.
+
+There is a keypad, which displays the name of a secretary.  The secretaries are Anna (index 0),
+Daphne (index 1), Debbie (index 2), Cindy (index 3), Gayle (index 4), Sara (index 5), Victoria (index 6),
+Stella (index 7), Rebecca (index 8) and Mary (index 9).  The names of the secretaries are entirely fictional.
+The first load of the keypad display is *Select A Secretary* and its background color is lightblue.  
+
+The background colors on the display are lightblue (index 0), lightgreen (index 1), pink (index 2), yellow (index 3),
+wheat (index 4), orangered (index 5) and lightgrey (index 6).
+
+The keypad has the numbers 0-9, C and S.  Background color is black.  All keys have
+a color of white, except C (which is deepskyblue) and S (which is orange).
+
+Hovering over the keypad changes the background color to navy, except C (which changes the background color to green)
+and S (which changes the background color to purple).  Hovering over the keypad gives a tooltip (e.g. Select Gayle,
+when 4 is hovered).
+
+The keypad C is Clear.  The keypad S changes the background colors in the display.
+
+* Clicking on 0 in the keypad displays Anna
+* Clicking on 1 in the keypad displays Daphne
+* Clicking on 2 in the keypad displays Debbie
+* Clicking on 3 in the keypad displays Cindy
+* Clicking on 4 in the keypad displays Gayle
+* Clicking on 5 in the keypad displays Sara
+* Clicking on 6 in the keypad displays Victoria
+* Clicking on 7 in the keypad displays Stella
+* Clicking on 8 in the keypad displays Rebecca
+* Clicking on 9 in the keypad displays Mary
+* Clicking on C in the keypad displays Select A Secretary
+* Clicking on S in the keypad changes the background color of the display
+    * If the current background color is lightblue the new background color is lightgreen
+    * If the current background color is lightgreen the new background color is pink
+    * If the current background color is pink the new background color is yellow
+    * If the current background color is yellow the new background color is wheat
+    * If the current background color is wheat the new background color is orangered
+    * If the current background color is orangered the new background color is lightgrey
+    * If the current background color is lightgrey the new background color is lightblue
+
+
+
+
 
 ## Celebrities
 
@@ -83,7 +133,7 @@ Facebook, LinkedIn, YouTube and Pinterest.
 
 ## Deployment
 
-Deployed on GitHub Pages - https://derektypist.github.io/bootstrap
+Deployed on [GitHub Pages](https://derektypist.github.io/bootstrap) at the master branch.
 
 When adding to AWS Cloud9, use the commands
 

@@ -15,7 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
-        $("button").click(function(){
+        $("#subjects").click(function(){
             $(".myhighlight").css("color", "orange");
         });
         $("p").mouseenter(function(){
@@ -48,7 +48,7 @@
         </div>
     </nav>
     
-    <!-- Section for List Items and Paragraphs -->
+    <!-- Section for Setting Up List Items and Paragraphs -->
     <section class="container-fluid">
         <article class="row">
             <article class="col-sm-4">
@@ -57,7 +57,7 @@
                 <li>Physics</li>
                 <li>Chemistry</li>
             </ul>
-            <button>Change Colour</button>
+            <input type="button" id="subjects" value="Change Colour"/>
             </article>
             <article class="col-sm-4">
                 <p>This is a paragraph</p>
@@ -69,13 +69,19 @@
             </article>
             
         </article>
+        
+        <!-- Set Up Blank Row -->
+        <article class="row"></article>
+        
+        <!-- Set Up Blank Paragraph -->
+        <p></p>
        </section>
        
-        <!-- Set Up Keypad -->
-        <section class="container-fluid"
-        <article class="row">
-            <article id="keypad">
-                <article id="display"></div>
+        <!-- Section for Setting Up Keypad -->
+        <section class="container-fluid" id="keypad">
+        
+                <!-- Set Up Display -->
+                <article id="display"></article>
                 
                 <!-- Set Up First Row for Keypad -->
                 <article class="row">
@@ -108,8 +114,8 @@
             
           
                 
-            </article>
-        </article>
+            
+        
     </section>
     
      <!-- Footer -->

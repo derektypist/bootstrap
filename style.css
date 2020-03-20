@@ -113,3 +113,13 @@ footer {
 #footer-details {
     margin: 20px;
 }
+
+/* jQueryDemo - Keypad */
+#display {
+    height: 75px;
+    font-size: 2.5em;
+    background-color: seagreen;
+    color: white;
+    text-align: center;
+}
+

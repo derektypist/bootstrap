@@ -15,6 +15,90 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
+        
+        // Set Up Global Variables
+        let iterations = 0;
+        const SECRETARIES = ["Anna", "Daphne", "Debbie", "Cindy", "Gayle", "Sara", "Victoria", "Stella", "Rebecca", "Mary"];
+        const DISPLAY_BACKGROUND_COLORS = ["lightblue", "lightgreen", "pink", "yellow", "wheat", "orangered", "lightgrey"];
+        const MESSAGE = "Select A Secretary";
+        clearDisplay();
+        
+        // Function to Clear Display
+        function clearDisplay() {
+            displaySecretary(MESSAGE);
+        }
+        
+        // Function to Display Secretary
+        function displaySecretary(name) {
+            $("#display").html(`<p>${name}</p>`);
+        }
+        
+        // Keypad
+        
+        // Display Daphne when 1 is Clicked 
+        $("#one").click(function() {
+            displaySecretary(SECRETARIES[1]);
+        });
+        
+        // Display Debbie when 2 is Clicked
+        $("#two").click(function() {
+            displaySecretary(SECRETARIES[2]);
+        });
+        
+        // Display Cindy when 3 is Clicked
+        $("#three").click(function() {
+            displaySecretary(SECRETARIES[3]);
+        });
+        
+        // Display Gayle when 4 is Clicked
+        $("#four").click(function() {
+            displaySecretary(SECRETARIES[4]);
+        });
+        
+        // Display Sara when 5 is Clicked
+        $("#five").click(function() {
+            displaySecretary(SECRETARIES[5]);
+        });
+        
+        // Display Victoria when 6 is Clicked
+        $("#six").click(function() {
+            displaySecretary(SECRETARIES[6]);
+        });
+        
+        // Display Stella when 7 is Clicked
+        $("#seven").click(function() {
+            displaySecretary(SECRETARIES[7]);
+        });
+        
+        // Display Rebecca when 8 is Clicked
+        $("#eight").click(function() {
+            displaySecretary(SECRETARIES[8]);
+        });
+        
+        // Display Mary when 9 is Clicked
+        $("#nine").click(function() {
+            displaySecretary(SECRETARIES[9]);
+        });
+        
+        // Display Anna when 0 is Clicked
+        $("#zero").click(function() {
+            displaySecretary(SECRETARIES[0]);
+        });
+        
+        // Set to Initial Default when C is Clicked
+        $("#clear").click(clearDisplay);
+        
+        // Change Background Color when S is Clicked
+        $("#settings").click(changeDisplayBackgroundColor);
+        
+        // Function to Change the Background Color of Display
+        function changeDisplayBackgroundColor() {
+            iterations++;
+            $("#display").css("background-color", DISPLAY_BACKGROUND_COLORS[iterations % 7]);
+        }
+        
+        // List Items and Paragraphs
+        
         $("#subjects").click(function(){
             $(".myhighlight").css("color", "orange");
         });

@@ -129,7 +129,7 @@ footer {
     text-align: center;
 }
 
-.row button {
+button {
     background-color: black;
     color: white;
     font-size: 2em;
@@ -140,7 +140,7 @@ footer {
     margin-right: 0px;
 }
 
-button {
+.row button {
     width: 33.333%;
 }
 

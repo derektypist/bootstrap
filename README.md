@@ -22,6 +22,7 @@ Information Architecture - Computing, Karaoke, Holidays, Balls, jQueryDemo and C
     Social Links
     Technologies
     Deployment
+    Credits
     
 ## Styling
 
@@ -79,7 +80,7 @@ Stella (index 7), Rebecca (index 8) and Mary (index 9).  The names of the secret
 The first load of the keypad display is *Select A Secretary* and its background color is lightblue.  
 
 The background colors on the display are lightblue (index 0), lightgreen (index 1), pink (index 2), yellow (index 3),
-wheat (index 4), orangered (index 5) and lightgrey (index 6).
+wheat (index 4), orangered (index 5), lightgrey (index 6), #F5DF4D (illuminating, index 7) and #EC9787 (blooming dahlia, index 8).
 
 The keypad has the numbers 0-9, C and S.  Background color is black.  All keys have
 a color of white, except C (which is deepskyblue) and S (which is orange).
@@ -109,10 +110,8 @@ The keypad C is Clear.  The keypad S changes the background colors in the displa
     * If the current background color is wheat the new background color is orangered
     * If the current background color is orangered the new background color is lightgrey
     * If the current background color is lightgrey the new background color is illuminating (hex color #F5DF4D)
-    * If the current background color is illuminating the new background color is lightblue
-
-
-
+    * If the current background color is illuminating (hex color #F5DF4D) the new background color is blooming dahlia (hex color #EC9787)
+    * If the current background color is blooming dahlia (hex color #EC9787) the new background color is lightblue
 
 
 ## Celebrities
@@ -143,3 +142,13 @@ When adding to AWS Cloud9, use the commands
     git push --set-upstream origin master
     
 Any changes, use the command git push in the terminal window
+
+## Credits
+
+### Contents
+
+Written by me.
+
+### Acknowledgements
+
+[W3Schools.com](https://www.w3schools.com)

@@ -19,7 +19,7 @@
         // Set Up Global Variables
         let iterations = 0;
         const SECRETARIES = ["Anna", "Daphne", "Debbie", "Cindy", "Gayle", "Sara", "Victoria", "Stella", "Rebecca", "Mary"];
-        const DISPLAY_BACKGROUND_COLORS = ["lightblue", "lightgreen", "pink", "yellow", "wheat", "orangered", "lightgrey"];
+        const DISPLAY_BACKGROUND_COLORS = ["lightblue", "lightgreen", "pink", "yellow", "wheat", "orangered", "lightgrey", "#F5DF4D"];
         const MESSAGE = "Select A Secretary";
         clearDisplay();
         
@@ -94,7 +94,7 @@
         // Function to Change the Background Color of Display
         function changeDisplayBackgroundColor() {
             iterations++;
-            $("#display").css("background-color", DISPLAY_BACKGROUND_COLORS[iterations % 7]);
+            $("#display").css("background-color", DISPLAY_BACKGROUND_COLORS[iterations % DISPLAY_BACKGROUND_COLORS.length]);
         }
         
         // List Items and Paragraphs

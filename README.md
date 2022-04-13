@@ -108,7 +108,8 @@ The keypad C is Clear.  The keypad S changes the background colors in the displa
     * If the current background color is yellow the new background color is wheat
     * If the current background color is wheat the new background color is orangered
     * If the current background color is orangered the new background color is lightgrey
-    * If the current background color is lightgrey the new background color is lightblue
+    * If the current background color is lightgrey the new background color is illuminating (hex color #F5DF4D)
+    * If the current background color is illuminating the new background color is lightblue
 
 
 

@@ -1,151 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Derek's Bootstrap Experience - jQuery Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek's Bootstrap Experience - jQuery Test</title>
+    <link href="favicon.ico" rel="icon">
+    <!-- Load Style Sheets -->
 
-<!-- Load Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Load Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
 
-<!-- Load Scripts --> 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-        
-        // Set Up Global Variables
-        let iterations = 0;
-        const SECRETARIES = ["Anna", "Daphne", "Debbie", "Cindy", "Gayle", "Sara", "Victoria", "Stella", "Rebecca", "Mary"];
-        const DISPLAY_BACKGROUND_COLORS = ["lightblue", "lightgreen", "pink", "yellow", "wheat", "orangered", "lightgrey", "#F5DF4D", "#EC9787"];
-        const MESSAGE = "Select A Secretary";
-        clearDisplay();
-        
-        // Function to Clear Display
-        function clearDisplay() {
-            displaySecretary(MESSAGE);
-        }
-        
-        // Function to Display Secretary
-        function displaySecretary(name) {
-            $("#display").html(`<p>${name}</p>`);
-        }
-        
-        // Keypad
-        
-        // Display Daphne when 1 is Clicked 
-        $("#one").click(function() {
-            displaySecretary(SECRETARIES[1]);
+            // Set Up Global Variables
+            let iterations = 0;
+            const SECRETARIES = ["Anna", "Daphne", "Debbie", "Cindy", "Gayle", "Sara", "Victoria", "Stella", "Rebecca", "Mary"];
+            const DISPLAY_BACKGROUND_COLORS = ["lightblue", "lightgreen", "pink", "yellow", "wheat", "orangered", "lightgrey", "#F5DF4D", "#EC9787"];
+            const MESSAGE = "Select A Secretary";
+            clearDisplay();
+
+            // Function to Clear Display
+            function clearDisplay() {
+                displaySecretary(MESSAGE);
+            }
+
+            // Function to Display Secretary
+            function displaySecretary(name) {
+                $("#display").html(`<p>${name}</p>`);
+            }
+
+            // Keypad
+
+            // Display Daphne when 1 is Clicked 
+            $("#one").click(function () {
+                displaySecretary(SECRETARIES[1]);
+            });
+
+            // Display Debbie when 2 is Clicked
+            $("#two").click(function () {
+                displaySecretary(SECRETARIES[2]);
+            });
+
+            // Display Cindy when 3 is Clicked
+            $("#three").click(function () {
+                displaySecretary(SECRETARIES[3]);
+            });
+
+            // Display Gayle when 4 is Clicked
+            $("#four").click(function () {
+                displaySecretary(SECRETARIES[4]);
+            });
+
+            // Display Sara when 5 is Clicked
+            $("#five").click(function () {
+                displaySecretary(SECRETARIES[5]);
+            });
+
+            // Display Victoria when 6 is Clicked
+            $("#six").click(function () {
+                displaySecretary(SECRETARIES[6]);
+            });
+
+            // Display Stella when 7 is Clicked
+            $("#seven").click(function () {
+                displaySecretary(SECRETARIES[7]);
+            });
+
+            // Display Rebecca when 8 is Clicked
+            $("#eight").click(function () {
+                displaySecretary(SECRETARIES[8]);
+            });
+
+            // Display Mary when 9 is Clicked
+            $("#nine").click(function () {
+                displaySecretary(SECRETARIES[9]);
+            });
+
+            // Display Anna when 0 is Clicked
+            $("#zero").click(function () {
+                displaySecretary(SECRETARIES[0]);
+            });
+
+            // Set to Initial Default when C is Clicked
+            $("#clear").click(clearDisplay);
+
+            // Change Background Color when S is Clicked
+            $("#settings").click(changeDisplayBackgroundColor);
+
+            // Function to Change the Background Color of Display
+            function changeDisplayBackgroundColor() {
+                iterations++;
+                $("#display").css("background-color", DISPLAY_BACKGROUND_COLORS[iterations % DISPLAY_BACKGROUND_COLORS.length]);
+            }
+
+            // List Items and Paragraphs
+
+            $("#subjects").click(function () {
+                $(".myhighlight").css("color", "orange");
+            });
+            $("#para-one").mouseenter(function () {
+                $("#para-one").css("color", "green");
+            });
+
+            $("#para-one").mouseleave(function () {
+                $("#para-one").css("color", "purple");
+            });
+
+            $("#para-two").mouseenter(function () {
+                $("#para-two").css("color", "blue");
+            });
+
+            $("#para-two").mouseleave(function () {
+                $("#para-two").css("color", "brown");
+            });
+
+            $("#para-three").mouseenter(function () {
+                $("#para-three").css("color", "teal");
+            });
+
+            $("#para-three").mouseleave(function () {
+                $("#para-three").css("color", "deepskyblue");
+            });
+
+            $("#para-four").mouseenter(function () {
+                $("#para-four").css("color", "lime");
+            });
+
+            $("#para-four").mouseleave(function () {
+                $("#para-four").css("color", "seagreen");
+            });
+
+
         });
-        
-        // Display Debbie when 2 is Clicked
-        $("#two").click(function() {
-            displaySecretary(SECRETARIES[2]);
-        });
-        
-        // Display Cindy when 3 is Clicked
-        $("#three").click(function() {
-            displaySecretary(SECRETARIES[3]);
-        });
-        
-        // Display Gayle when 4 is Clicked
-        $("#four").click(function() {
-            displaySecretary(SECRETARIES[4]);
-        });
-        
-        // Display Sara when 5 is Clicked
-        $("#five").click(function() {
-            displaySecretary(SECRETARIES[5]);
-        });
-        
-        // Display Victoria when 6 is Clicked
-        $("#six").click(function() {
-            displaySecretary(SECRETARIES[6]);
-        });
-        
-        // Display Stella when 7 is Clicked
-        $("#seven").click(function() {
-            displaySecretary(SECRETARIES[7]);
-        });
-        
-        // Display Rebecca when 8 is Clicked
-        $("#eight").click(function() {
-            displaySecretary(SECRETARIES[8]);
-        });
-        
-        // Display Mary when 9 is Clicked
-        $("#nine").click(function() {
-            displaySecretary(SECRETARIES[9]);
-        });
-        
-        // Display Anna when 0 is Clicked
-        $("#zero").click(function() {
-            displaySecretary(SECRETARIES[0]);
-        });
-        
-        // Set to Initial Default when C is Clicked
-        $("#clear").click(clearDisplay);
-        
-        // Change Background Color when S is Clicked
-        $("#settings").click(changeDisplayBackgroundColor);
-        
-        // Function to Change the Background Color of Display
-        function changeDisplayBackgroundColor() {
-            iterations++;
-            $("#display").css("background-color", DISPLAY_BACKGROUND_COLORS[iterations % DISPLAY_BACKGROUND_COLORS.length]);
-        }
-        
-        // List Items and Paragraphs
-        
-        $("#subjects").click(function(){
-            $(".myhighlight").css("color", "orange");
-        });
-        $("#para-one").mouseenter(function(){
-            $("#para-one").css("color", "green");
-        });
-        
-        $("#para-one").mouseleave(function(){
-            $("#para-one").css("color", "purple");
-        });
-        
-        $("#para-two").mouseenter(function(){
-            $("#para-two").css("color", "blue");
-        });
-        
-         $("#para-two").mouseleave(function(){
-            $("#para-two").css("color", "brown");
-        });
-        
-        $("#para-three").mouseenter(function(){
-            $("#para-three").css("color", "teal");
-        });
-        
-        $("#para-three").mouseleave(function(){
-            $("#para-three").css("color", "deepskyblue");
-        });
-        
-        $("#para-four").mouseenter(function(){
-            $("#para-four").css("color", "lime");
-        });
-        
-        $("#para-four").mouseleave(function(){
-            $("#para-four").css("color", "seagreen");
-        });
-        
-        
-    });
-</script>
+    </script>
 </head>
+
 <body>
-<nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Logo -->
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand">My test</a>
             </div>
-            
+
             <!-- navbar with icons -->
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home <i class="fa fa-home" aria-hidden="true"></i></a></li>
@@ -153,22 +159,23 @@
                 <li><a href="karaoke.html">Karaoke <i class="fa fa-microphone" aria-hidden="true"></i></a></li>
                 <li><a href="holidays.html">Holidays <i class="fa fa-plane" aria-hidden="true"></i></a></li>
                 <li><a href="balls.html">Balls <i class="fa fa-music" aria-hidden="true"></i></a></li>
-                <li class="active"><a href="jquerydemo.html">jQuery Test <i class="fa fa-question" aria-hidden="true"></i></a></li>
+                <li class="active"><a href="jquerydemo.html">jQuery Test <i class="fa fa-question"
+                            aria-hidden="true"></i></a></li>
                 <li><a href="celebrities.html">Celebrities <i class="fa fa-television" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </nav>
-    
+
     <!-- Section for Setting Up List Items and Paragraphs -->
     <section class="container-fluid">
         <article class="row">
             <article class="col-sm-4">
                 <ul>
-                <li class="myhighlight">Maths</li>
-                <li>Physics</li>
-                <li>Chemistry</li>
-            </ul>
-            <input type="button" id="subjects" value="Change Colour"/>
+                    <li class="myhighlight">Maths</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                </ul>
+                <input type="button" id="subjects" value="Change Colour" />
             </article>
             <article class="col-sm-4">
                 <p id="para-one">This is a paragraph</p>
@@ -178,70 +185,75 @@
                 <p id="para-three">This is another paragraph</p>
                 <p id="para-four">This is the third column</p>
             </article>
-            
+
         </article>
-        
+
         <!-- Set Up Blank Row -->
         <article class="row"></article>
-        
+
         <!-- Set Up Blank Paragraph -->
         <p></p>
-       </section>
-       
-        <!-- Section for Setting Up Keypad -->
-        <section class="container-fluid" id="keypad">
-        
-                <!-- Set Up Display for Keypad -->
-                <article id="display" class="row"></article>
-                
-                <!-- Set Up First Row for Keypad -->
-                <article class="row">
-                    <button id="one" title="Select Daphne">1</button>
-                    <button id="two" title="Select Debbie">2</button>
-                    <button id="three" title="Select Cindy">3</button>
-                </article>
-                
-                <!-- Set Up Second Row for Keypad -->
-                <article class="row">
-                    <button id="four" title="Select Gayle">4</button>
-                    <button id="five" title="Select Sara">5</button>
-                    <button id="six" title="Select Victoria">6</button>
-                </article>
-                
-                <!-- Set Up Third Row for Keypad -->
-                <article class="row">
-                    <button id="seven" title="Select Stella">7</button>
-                    <button id="eight" title="Select Rebecca">8</button>
-                    <button id="nine" title="Select Mary">9</button>
-                </article>
-                
-                <!-- Set Up Fourth Row for Keypad -->
-                <article class="row">
-                    <button id="clear" title="Clear Display">C</button>
-                    <button id="zero" title="Select Anna">0</button>
-                    <button id="settings" title="Change Background Color Display">S</button>
-                </article>
-            </article>
-            
-          
-                
-            
-        
     </section>
-    
-     <!-- Footer -->
-       <footer class="container">
-           <div class="row" id="footer-details">
-               <h3>My Social</h3>
-               <ul class="list-inline social-links">
-    
-                    <li><a target="_blank" href="https://www.facebook.com/derek.dhammaloka/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/derekdhammaloka" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/user/derekthesec" title="YouTube"><i class="fa fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://www.pinterest.co.uk/derekthesec" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-               </ul>
-           </div>
-       </footer>
-    
+
+    <!-- Section for Setting Up Keypad -->
+    <section class="container-fluid" id="keypad">
+
+        <!-- Set Up Display for Keypad -->
+        <article id="display" class="row"></article>
+
+        <!-- Set Up First Row for Keypad -->
+        <article class="row">
+            <button id="one" title="Select Daphne">1</button>
+            <button id="two" title="Select Debbie">2</button>
+            <button id="three" title="Select Cindy">3</button>
+        </article>
+
+        <!-- Set Up Second Row for Keypad -->
+        <article class="row">
+            <button id="four" title="Select Gayle">4</button>
+            <button id="five" title="Select Sara">5</button>
+            <button id="six" title="Select Victoria">6</button>
+        </article>
+
+        <!-- Set Up Third Row for Keypad -->
+        <article class="row">
+            <button id="seven" title="Select Stella">7</button>
+            <button id="eight" title="Select Rebecca">8</button>
+            <button id="nine" title="Select Mary">9</button>
+        </article>
+
+        <!-- Set Up Fourth Row for Keypad -->
+        <article class="row">
+            <button id="clear" title="Clear Display">C</button>
+            <button id="zero" title="Select Anna">0</button>
+            <button id="settings" title="Change Background Color Display">S</button>
+        </article>
+        </article>
+
+
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row" id="footer-details">
+            <h3>My Social</h3>
+            <ul class="list-inline social-links">
+
+                <li><a target="_blank" href="https://www.facebook.com/derek.dhammaloka/" title="Facebook"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/derekdhammaloka" title="LinkedIn"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/user/derekthesec" title="YouTube"><i
+                            class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" href="https://www.pinterest.co.uk/derekthesec" title="Pinterest"><i
+                            class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
